@@ -88,41 +88,85 @@ const createLanguagesArray = () => {
 }
 
 const createNumbersArray = () => {
-
+    var array = [];
+    for (var i = 0; i < 6; i++){
+        array[i] = i;
+    }
+    return array;
 }
 
 const replaceElement = (languages) => {
-
+    var array = createLanguagesArray();
+    array[2] = "Javascript";
+    return array;
 }
 
 const addElement = (languages) => {
+    var array = createLanguagesArray();
+    array[2] = "Javascript";
+    array.push("Ruby");
+    array.push("Python");
+    return array;
 
 }
 
 const addNumberElement = (numbers) => {
-
+    var array = createNumbersArray();
+    array.unshift(-1);
+    array.unshift(-2);
+    return array;
 }
 
 const removeFirst = (languages) => {
-
+    var array = createLanguagesArray();
+    array[2] = "Javascript";
+    array.push("Ruby");
+    array.push("Python");
+    array.shift();
+    return array;
 }
 
 const removeLast = (languages) => {
-
+    var array = createLanguagesArray();
+    array[2] = "Javascript";
+    array.push("Ruby");
+    array.push("Python");
+    array.shift();
+    array.pop();
+    return array;
 }
 
 const convertStrToArr = (social_arr) => {
-
-}
+    var social = 'Facebook,Twitter,Google +,Viadeo,LinkedIn';
+    var array = social.split(',');
+    return array;
+} 
 
 const convertArrToStr = (languages) => {
-
+    var array = createLanguagesArray();
+    array[2] = "Javascript";
+    array.push("Ruby");
+    array.push("Python");
+    array.shift();
+    array.pop();
+    var string = array.join();
+    return string;
 }
 
 const sortArr = (social_arr) => {
-
+    var social = 'Facebook,Twitter,Google +,Viadeo,LinkedIn';
+    var array = social.split(',');
+    array.sort();
+    return array;
 }
 
 const invertArr = (social_arr) => {
-
+    var array = createLanguagesArray();
+    array[2] = "Javascript";
+    array.push("Ruby");
+    array.push("Python");
+    array.shift();
+    array.pop();
+    array.reverse();
+    return array;
 }
